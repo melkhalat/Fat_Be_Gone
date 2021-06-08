@@ -1,0 +1,253 @@
+#AddExerciseView{
+  width: 100%;
+  height: 100vh;
+  font-family: 'Nunito', sans-serif;
+}
+
+#AddExerciseHeader{
+  width: 100%;
+  height: 25vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  border-bottom: 1px solid #1F0CAD;
+  padding: 5px;
+  box-sizing: border-box;
+  font-size: 1rem;
+}
+
+#AddExerciseName{
+  height: 20%;
+  color: red;
+  font-size: 1.5em;
+}
+
+#ExerciseSearchBar, #ExerciseSearchBar:focus{
+  width: 80%;
+  height: 35%;
+  resize: none;
+  border: 1px solid #1F0CAD;
+  box-sizing: border-box;
+  font-weight: 200;
+  font-size: 2em;
+}
+
+#AddExerciseOptionsWrapper{
+  width: 80%;
+  height: 35%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.AddExerciseOptionsInner{
+  height: 45%;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.AddExerciseOptions{
+  height: 100%;
+  width: 49.5%;
+  position: relative;
+  display: inline-block;
+  font-size: 1em;
+  font-weight: 200;
+  cursor: pointer;
+}
+
+.AddExerciseOptions:hover .AeViews{
+  color: white;
+  background-color: red;
+  border: none;
+}
+
+.AeViews{
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #1F0CAD;
+  box-sizing: border-box;
+  font-size: 1.25em;
+  font-weight: 600;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.AeViews > p{
+  min-width: 0;
+  text-align: left;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.AeViews:hover{
+  background-color: red;
+  color: white;
+}
+
+.AeViewsDropdown{
+  height: 30vh;
+  width: 100%;
+  overflow: auto;
+  overflow-x: hidden;
+  display:flex;
+  flex-direction: column;
+  background-color: red;
+  visibility: hidden;
+  text-decoration: none;
+}
+
+.AddExerciseOptions:hover .AeViewsDropdown{
+  visibility: visible;
+}
+
+.AeOptionItem{
+  border-top: 1px solid white;
+  box-sizing: border-box;
+  font-size: 1.15em;
+  font-weight: 200;
+  color: white;
+  text-align: center;
+}
+
+.AeOptionItem:active{
+  color: red;
+}
+
+.AddExerciseBtn{
+  width: 49.5%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #1F0CAD;
+  box-sizing: border-box;
+  font-size: 1.25em;
+  font-weight: 600;
+  text-align: center;
+  cursor: pointer;
+  overflow: hidden;
+}
+
+.AddExerciseBtn:hover{
+  background-color: red;
+  color: white;
+}
+
+#AddExerciseList{
+  height: 69vh;
+  width: 100%;
+  overflow: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 1rem;
+}
+
+.AddExerciseItem{
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+  font-size: 2em;
+  font-weight: 200;
+  font-style: italic;
+}
+
+.AddExerciseCheckboxWrapper{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.AddExerciseCheckBox{
+  border: 1.5px solid black;
+  box-sizing: border-box;
+  height: 25px;
+  width: 25px;
+  margin-bottom: 1.2vh;
+  cursor: pointer;
+}
+
+.AddExerciseFavorite{
+  height: 46.5px;
+  width: 52.5px;
+}
+
+
+@media only screen and (max-width: 1050px){
+  #ExerciseSearchBar,
+  #ExerciseSearchBar:focus,
+  #AddExerciseOptionsWrapper{
+    width: 95%;
+  }
+  .AddExerciseItem{
+    width: 93.5%;
+  }
+  .AddExerciseOptions{
+    font-size: 1.5em;
+  }
+  .AddExerciseBtn{
+    font-size: 1.75em;
+  }
+  #AddExerciseName{
+    font-size: 2.25em;
+  }
+}
+
+@media only screen and (max-width: 484px){
+  .AddExerciseItem{
+    font-size: 1.75em;
+  }
+  #AddExerciseName{
+    font-size: 2em;
+  }
+  .AddExerciseOptions{
+    font-size: 1.25em;
+  }
+  .AddExerciseBtn{
+    font-size: 1.5em;
+  }
+}
+
+@media only screen and (max-width: 350px){
+  .AeViews{
+    font-size: 1.15em;
+  }
+  .AddExerciseItem{
+    font-size: 1.5em
+  }
+  #AddExerciseHeader{
+    height: 35vh;
+  }
+}
+
+@media only screen and (max-height: 550px){
+  #AddExerciseHeader{
+    height: 50vh;
+  }
+  #AddExerciseName{
+    font-size: 2em;
+  }
+}
+
+@media only screen and (min-height: 1000px){
+  #AddExerciseName{
+    font-size: 2.5em;
+  }
+}
+
+@media only screen and (min-height: 1200px){
+  #AddExerciseName{
+    font-size: 3em;
+  }
+}

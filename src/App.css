@@ -1,0 +1,13 @@
+html, body {
+  font-size: 100%;
+  background-color: lightblue;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+textarea, button, input{
+  font-family: inherit;
+}

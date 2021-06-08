@@ -1,0 +1,515 @@
+#WoContainer{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  font-family: 'Nunito',sans-serif;
+}
+
+#WoWrapper{
+  display: flex;
+  justify-content: space-between;
+  margin: 2vh 0 2vh;
+  width: 96.7vw;
+  font-size: 1rem;
+}
+
+#EDITbtn{
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 30px;
+  color: red;
+  height: 10vh;
+  width: 7vw;
+  
+  
+}
+
+#Descriptions_Header{
+  text-align: center;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 50px;
+  color: red;
+}
+
+#ab_roller{
+  position: relative;
+  top: 30px;
+  height: 300px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 25%;
+}
+
+
+
+#kettlebell_windmill{
+  position: relative;
+  top: 200px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  height: 600px;
+  width: 40%;
+  
+}
+
+#hammer_curl_1{
+  position: relative;
+  top: 500px;
+  left: 700px;
+  height: 500px;
+  
+  
+}
+
+#hammer_curl_2{
+  position: relative;
+  top: 500px;
+  left: 800px;
+  height: 500px;
+  
+  
+}
+
+#incline_curl_1{
+  position: relative;
+  top: 1500px;
+  left: 100px;
+  height: 500px;
+}
+
+#incline_curl_2{
+  position: relative;
+  top: 1500px;
+  left: 200px;
+  height: 500px;
+}
+
+#air_bike{
+  position: relative;
+  top: 2000px;
+}
+
+#return{
+  position: relative;
+  top: -1900px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 20px;
+  color: red;
+}
+
+#wikiHowAttribute{
+  position: relative;
+  text-align: center;
+  top: -1200px;
+}
+
+#kettlebellAttribute{
+  text-align: center;
+  position: relative;
+  top: -475px;
+}
+
+#AHCAttribute{
+  text-align: center;
+  position: relative;
+  top: 350px;
+}
+
+#AIDCAttribute{
+  text-align: center;
+  position: relative;
+  top: 1350px;
+}
+
+#ABAttribute{
+  text-align: center;
+  position: relative;
+  top: 2000px;
+}
+
+
+
+.AR{
+  position: relative;
+  top: 100px;
+}
+
+.KBW{
+  position: relative;
+  top: 650px;
+}
+
+.AHC{
+  position: relative;
+  top: 1400px;
+}
+
+.AIDC{
+  position: relative;
+  top: 2300px;
+}
+
+.AB{
+  position: relative;
+  top: 3300px;
+}
+
+.WoDropdownDiv{
+  position: relative;
+  display: inline-block;
+  width: 30vw;
+  height: 0vh;
+}
+
+.WoDropdownDiv:hover .WoViews{
+  background-color: red;
+  color: white;
+  border:none;
+}
+
+.WoViews{
+  overflow: hidden;
+  width: 30vw;
+  border: 1px solid #1F0CAD;
+  box-sizing: border-box;
+  font-size: 2em;
+  font-weight: 600;
+  text-align: center;
+  white-space: nowrap;
+  color: red;
+  cursor: pointer;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  text-decoration: none;
+  background-color: white;
+}
+
+.WoViews:hover{
+  background-color: red;
+  color: white;
+}
+
+.WoViewsDropdown{
+  overflow: auto;
+  overflow-x: hidden;
+  max-height: 25vh;
+  display:flex;
+  display: none;
+  flex-direction: column;
+  background-color: red;
+}
+
+.WoDropdownDiv:hover .WoViewsDropdown{
+  display: flex;
+}
+
+.WoDropdownItem{
+  border-top: 1px solid white;
+  box-sizing: border-box;
+  text-decoration: none;
+  text-align: center;
+  font-size: 1.5em;
+  font-weight: 200;
+  color: white;
+}
+
+.WoDropdownItem:active{
+  color: red;
+}
+
+.CurrentRoutineWorkouts{
+  width: 96.7vw;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-bottom: 2vh;
+  border: 1px solid #1F0CAD;
+  box-shadow: 12px 12px 2px 1px rgba(0, 0, 255, .2);
+  box-sizing: border-box;
+}
+
+.CurrentRoutineWorkoutsHeader{
+  width: 100%;
+  min-height: 10vh;
+  display: flex;
+  flex-direction: column;
+  padding: 5px;
+  box-sizing: border-box;
+  overflow: hidden;
+  font-size: 1rem;
+}
+
+.CurrentRoutineWorkoutsTitle{
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  padding-left: 19px;
+  box-sizing: border-box;
+}
+
+.CurrentRoutineWorkoutsTitle > p{
+  font-weight: 900;
+  font-style: italic;
+  font-size: 3em;
+  color: red;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.CurrentRoutineWorkoutsTitle > p > span{
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.CurrentRoutineWorkoutsTitle > p:first-of-type{
+  margin-right: 3vh;
+}
+
+.CurrentRoutineItems{
+  width: 100%;
+  min-height: 0vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-top: 1px solid #1F0CAD;
+  box-sizing: border-box;
+  font-size: 1rem;
+}
+
+.CurrentRoutineItemHeader{
+  width: 98.5%;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex: 1;
+}
+
+.CurrentRoutineItemHeader > p{
+  height: 100%;
+  width: 100%;
+  font-size: 3em;
+  font-weight: 200;
+  color: red;
+}
+
+.CurrentRoutineSetsReps{
+  height: 10vh;
+  width: 93.5%;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  font-size: 1rem;
+}
+
+.CurrentRoutineSetsReps > p{
+  height: 100%;
+  font-size: 3em;
+  font-weight: 200;
+}
+
+.CurrentRoutineValues, .CurrentRoutineValues:focus{
+  resize: none;
+  border: none;
+  outline: none;
+  overflow: hidden;
+  white-space: nowrap;
+  text-align: center;
+  height: 90%;
+  text-overflow: ellipsis;
+  font-size: 3em;
+  font-weight: 200;
+  color: #1F0CAD;
+  text-decoration: underline;
+  flex: 1;
+}
+
+.SetDeleteBtn{
+  height: 80%;
+  display: flex;
+  align-self: center;
+  cursor: pointer;
+}
+
+.CurrentRoutineAddSet{
+  width: 100%;
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-right: 2vh;
+  font-size: 2.75em;
+  font-weight: 200;
+  cursor: pointer;
+  flex: 0.75;
+}
+
+.CurrentRoutineAddSet:hover > p{
+  color: #1F0CAD;
+  text-decoration: underline;
+}
+
+#WoBtnsWrapper{
+  height: 10vh;
+  display: flex;
+}
+
+.WoBtns{
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 30px;
+  color: red;
+  width: 7vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.WoBtns:hover{
+  opacity: 0.75;
+}
+
+
+
+#AddRoutineBtn{
+  display: none;
+  height: 10vh;
+  min-width: 8vw;
+  position: fixed;
+  right: 0;
+  bottom: 0;
+}
+
+
+
+@media only screen and (max-width: 1173px){
+  .CurrentRoutineSetsReps{
+    width: 98%;
+  }
+}
+
+@media only screen and (max-width: 618px){
+  #WoWrapper{
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    margin-top: 1px;
+  }
+  #WoWrapper > div:first-child{
+    order: 1;
+    flex: 1;
+  }
+  #WoWrapper > .WoDropdownDiv{
+    order: 2;
+    flex: 1;
+  }
+  #WoWrapper > a{
+    display: none;
+  }
+  .WoViews{
+    border: none;
+    border-bottom: 1px solid #1F0CAD;
+  }
+  .CurrentRoutineWorkouts{
+    width: 100%;
+  }
+  .WoDropdownDiv,
+  .WoViews{
+    width: 100vw;
+  }
+  .CurrentRoutineItemHeader,
+  .CurrentRoutineItems,
+  .CurrentRoutineSetsReps{
+    width: 100%;
+  }
+  .CurrentRoutineWorkoutsTitle{
+    padding: 0;
+  }
+  .CurrentRoutineValues, .CurrentRoutineValues:focus{
+    font-size: 2.5em;
+  }
+  #AddRoutineBtn{
+    display: inline;
+  }
+  #WoBtnsWrapper{
+    justify-content: space-around;
+  }
+}
+
+@media only screen and (max-width: 524px){
+  .CurrentRoutineItems{
+    font-size: 0.7rem;
+  }
+  .CurrentRoutineValues, .CurrentRoutineValues:focus{
+    font-size: 2em;
+  }
+  .CurrentRoutineWorkoutsTitle > p{
+    display: flex;
+    flex-direction: column;
+  }
+  .CurrentRoutineSetsReps{
+    height: 9vh;
+  }
+  .CurrentRoutineSetsReps > p{
+    font-size: 2em;
+  }
+  .SetDeleteBtn{
+    height: 70%;
+  }
+}
+
+@media only screen and (max-width: 440px){
+  .CurrentRoutineWorkoutsHeader{
+    font-size: 0.75rem;
+  }
+  .CurrentRoutineSetsReps > p{
+    align-self: center;
+  }
+  .SetDeleteBtn{
+    height: 70%;
+  }
+  .CurrentRoutineAddSet{
+    font-size: 3.5em;
+  }
+}
+
+@media only screen and (max-width: 370px){
+  .CurrentRoutineItems{
+    font-size: 0.5rem;
+  }
+  .SetDeleteBtn{
+    align-self: center;
+  }
+}
+
+@media only screen and (max-width: 342px){
+  .CurrentRoutineWorkoutsHeader{
+    font-size: 0.65rem;
+  }
+}
+
+@media only screen and (max-height: 500px){
+  .CurrentRoutineSetsReps{
+    height: 20vh;
+  }
+  #WoBtnsWrapper{
+    height: 15vh;
+  }
+}
+
+@media only screen and (min-height: 1000px){
+  #WoBtnsWrapper{
+    height: 8vh;
+  }
+}
+
+@media only screen and (min-height: 1250px){
+  .CurrentRoutineSetsReps{
+    height: 7vh;
+  }
+  .CurrentRoutineAddSet{
+    font-size: 3em;
+  }
+}

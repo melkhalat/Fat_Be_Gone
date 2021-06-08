@@ -1,0 +1,1037 @@
+#Story {
+
+  width: 100%;
+
+  display: flex;
+
+  font-family: "Nunito", sans-serif;
+
+}
+
+
+
+#StoryStatView {
+
+  width: 30%;
+
+  display: flex;
+
+  flex-direction: column;
+
+  align-items: center;
+
+  margin-top: 2.5%;
+
+  background-color: lightcyan;
+
+  color: red;
+
+  box-shadow: 5px 10px rgb(196, 47, 47);
+
+}
+
+
+
+#StoryStatContent {
+
+  width: 95%;
+
+  border: 1px solid black;
+
+  box-sizing: border-box;
+
+}
+
+
+
+#StoryStatHeader {
+
+  width: 100%;
+
+  min-height: 0vh;
+
+  display: flex;
+
+  justify-content: flex-start;
+
+  align-items: center;
+
+  box-sizing: border-box;
+
+  overflow: hidden;
+
+  text-overflow: ellipsis;
+
+  font-size: 1rem;
+
+}
+
+
+
+#StoryStatHeader > img {
+
+  max-height: 90%;
+
+  max-width: 30%;
+
+  clip-path: circle(40%);
+
+}
+
+
+
+#StoryStatHeader > p {
+
+  font-size: 2.25em;
+
+  font-weight: 200;
+
+  white-space: pre-line;
+
+}
+
+
+
+#StoryStatList {
+
+  display: flex;
+
+  flex-direction: column;
+
+  align-items: center;
+
+  font-size: 1rem;
+
+  background-color: lightcyan;
+
+}
+
+
+
+.StoryStatListItem {
+
+  width: 100%;
+
+  display: flex;
+
+  align-items: center;
+
+  padding: 5px;
+
+  border-top: 1px solid black;
+
+  box-sizing: border-box;
+
+  font-size: 3em;
+
+  font-weight: 200;
+
+  overflow: hidden;
+
+  flex: 1;
+
+}
+
+
+
+.StoryStatListItem > span {
+
+  white-space: nowrap;
+
+}
+
+
+
+#StoryTimeline {
+
+  width: 70%;
+
+  display: flex;
+
+  flex-direction: column;
+
+  align-items: center;
+
+  margin-top: 2.5vh;
+
+}
+
+
+
+#StorySubmission {
+
+  width: 95%;
+
+  display: flex;
+
+  flex-direction: column;
+
+  align-items: center;
+
+}
+
+
+
+#StorySubmissionContent {
+
+  width: 100%;
+
+  border: 1px solid #1f0cad;
+
+  box-sizing: border-box;
+
+}
+
+
+
+#StorySubmitText,
+
+#StorySubmitText:focus {
+
+  display: block;
+
+  resize: none;
+
+  outline: none;
+
+  height: 25vh;
+
+  width: 100%;
+
+  border: none;
+
+  font-size: 2em;
+
+  font-weight: 200;
+
+}
+
+
+
+#StorySubmitMediaDiv {
+
+  height: 15vh;
+
+  width: 100%;
+
+  display: none;
+
+  align-items: center;
+
+  justify-content: center;
+
+  padding: 1px;
+
+  box-sizing: border-box;
+
+  background-color: black;
+
+}
+
+
+
+.StorySubmitMedia {
+
+  max-width: 100%;
+
+  max-height: 100%;
+
+}
+
+
+
+#StorySubmissionButtons {
+
+  height: 10vh;
+
+  width: 100%;
+
+  display: flex;
+
+  justify-content: space-between;
+
+  align-items: center;
+
+}
+
+#nutritionBTN{
+  position: absolute;
+  left: 1500px; top: 300px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  height: 200px;
+  width: 200px;
+  background-color: red;
+  color: white;
+  font-size: 30px;
+  
+}
+
+#workoutBTN{
+  position: absolute;
+  left: 1500px; top: 600px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  height: 200px;
+  width: 200px;
+  background-color: red;
+  color: white;
+  font-size: 30px;
+}
+
+
+
+.inputFile {
+
+  height: 0.1px;
+
+  width: 0.1px;
+
+  opacity: 0;
+
+  overflow: hidden;
+
+  position: absolute;
+
+  z-index: -1;
+
+}
+
+
+
+.inputLabel {
+
+  height: 67.5%;
+
+  min-width: 30%;
+
+  max-width: 50%;
+
+  width: 30%;
+
+  display: flex;
+
+  justify-content: center;
+
+  align-items: center;
+
+  border: 1px solid black;
+
+  padding: 2px;
+
+  box-sizing: border-box;
+
+  cursor: pointer;
+
+  white-space: nowrap;
+
+  background-color: red;
+
+  color: white;
+
+}
+
+
+
+.inputLabel > span {
+
+  min-width: 0;
+
+  overflow: hidden;
+
+  white-space: nowrap;
+
+  text-overflow: ellipsis;
+
+}
+
+
+
+.inputLabel:hover {
+
+  opacity: 0.85;
+
+  cursor: pointer;
+
+}
+
+
+
+.inputLabel:active {
+
+  color: red;
+
+}
+
+
+
+#StorySubmitBtn {
+
+  height: 67.5%;
+
+  min-width: 15%;
+
+  background-color: red;
+
+  color: white;
+
+  font-size: 0.85em;
+
+  box-sizing: border-box;
+
+}
+
+
+
+#StorySubmitBtn:hover {
+
+  opacity: 0.85;
+
+  cursor: pointer;
+
+}
+
+
+
+#StoriesList {
+
+  width: 100%;
+
+  display: flex;
+
+  flex-direction: column;
+
+  align-items: center;
+
+  font-family: "Nunito", sans-serif;
+
+}
+
+
+
+.Stories {
+
+  width: 95%;
+
+  overflow: hidden;
+
+  display: flex;
+
+  flex-direction: column;
+
+  align-items: center;
+
+  border: 1px solid #1f0cad;
+
+  box-sizing: border-box;
+
+}
+
+
+
+.StoriesHeader {
+
+  width: 100%;
+
+  height: 8vh;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: flex-start;
+
+  background-color: red;
+
+  color: white;
+
+  font-size: 1.25em;
+
+}
+
+
+
+.StoriesHeader > p {
+
+  white-space: pre;
+
+}
+
+
+
+.StoriesHeader > img {
+
+  max-height: 100%;
+
+  max-width: 30%;
+
+  clip-path: circle(40%);
+
+}
+
+
+
+.StoriesTextDiv {
+
+  overflow: auto;
+
+  width: 100%;
+
+  height: 15vh;
+
+  padding: 5px;
+
+  box-sizing: border-box;
+
+  font-size: 1.25em;
+
+}
+
+
+
+.StoriesMediaDiv {
+
+  min-height: 20vh;
+
+  width: 100%;
+
+  display: flex;
+
+  justify-content: center;
+
+  align-items: center;
+
+  background-color: black;
+
+  border-top: 1px solid #707070;
+
+  box-sizing: border-box;
+
+}
+
+
+
+.StoriesMedia {
+
+  max-width: 100%;
+
+}
+
+
+
+.StoriesButtonWrapper {
+
+  width: 95%;
+
+  margin-top: 1vh;
+
+  margin-bottom: 3vh;
+
+}
+
+
+
+.StoriesButtonWrapper > button {
+
+  min-width: 15vw;
+
+  height: 5vh;
+
+  border: 1px solid black;
+
+  box-sizing: border-box;
+
+  font-size: 1em;
+
+  cursor: pointer;
+
+  background-color: red;
+
+  color: white;
+
+}
+
+
+
+.StoriesButtonWrapper > button:first-child {
+
+  margin-right: 2vw;
+
+}
+
+
+
+.StoriesButtonWrapper > button:hover {
+
+  background-color: red;
+
+  color: white;
+
+}
+
+
+
+#StoryModal {
+
+  width: 100%;
+
+  height: 100vh;
+
+  position: fixed;
+
+  top: 0;
+
+  display: flex;
+
+  justify-content: center;
+
+  align-items: center;
+
+  background-color: rgba(0, 0, 0, 0.5);
+
+  font-family: "Nunito", sans-serif;
+
+}
+
+
+
+#StoryModalContent {
+
+  width: 50%;
+
+  height: 50%;
+
+  display: flex;
+
+  flex-direction: column;
+
+  align-items: center;
+
+  background-color: white;
+
+}
+
+
+
+#StoryModalHeader {
+
+  width: 100%;
+
+  height: 15%;
+
+  display: flex;
+
+  justify-content: space-between;
+
+  padding: 0px 10px 0px;
+
+  box-sizing: border-box;
+
+  align-items: center;
+
+  background-color: red;
+
+  color: white;
+
+  font-size: 2em;
+
+}
+
+
+
+#StoryModalHeader > p:nth-child(even) {
+
+  cursor: pointer;
+
+}
+
+
+
+#StoryModalText,
+
+#StoryModalText:focus {
+
+  outline: none;
+
+  resize: none;
+
+  border: none;
+
+  height: 25%;
+
+  width: 100%;
+
+  padding: 0px 10px 0px;
+
+  border-bottom: 1px solid #707070;
+
+  box-sizing: border-box;
+
+  font-weight: 200;
+
+  font-size: 2em;
+
+  flex: 1;
+
+}
+
+
+
+#StoryModalMediaWrapper {
+
+  width: 100%;
+
+  height: 45%;
+
+  display: flex;
+
+  justify-content: center;
+
+  align-items: center;
+
+  border-bottom: 1px solid #707070;
+
+  box-sizing: border-box;
+
+  background-color: black;
+
+}
+
+
+
+.StoryModalMedia {
+
+  max-width: 100%;
+
+  max-height: 100%;
+
+}
+
+
+
+#StoryModalBtnWrapper {
+
+  width: 100%;
+
+  height: 15%;
+
+  display: flex;
+
+  justify-content: center;
+
+  align-items: center;
+
+  box-sizing: border-box;
+
+  font-size: 1rem;
+
+}
+
+
+
+#StoryModalBtnWrapper > label {
+
+  margin-right: 2.5%;
+
+}
+
+
+
+#StoryModalBtnWrapper > button {
+
+  height: 67.5%;
+
+  min-width: 30%;
+
+  display: flex;
+
+  justify-content: center;
+
+  align-items: center;
+
+  border: 1px solid #1f0cad;
+
+  background-color: red;
+
+  color: white;
+
+  box-sizing: border-box;
+
+  margin-left: 2.5%;
+
+  font-size: 1em;
+
+  cursor: pointer;
+
+}
+
+
+
+#StoryModalBtnWrapper > button:hover {
+
+  
+
+
+  cursor: pointer;
+
+}
+
+
+
+
+
+
+
+@media only screen and (max-width: 1188px) {
+
+  #StoryStatHeader {
+
+    font-size: 0.8rem;
+
+  }
+
+  #StoryStatList {
+
+    font-size: 0.8rem;
+
+  }
+
+}
+
+
+
+@media only screen and (max-width: 998px) {
+
+  #StoryStatHeader > img {
+
+    max-width: 40%;
+
+  }
+
+  .StoryStatListItem:not(:first-child) {
+
+    white-space: pre;
+
+  }
+
+}
+
+
+
+@media only screen and (max-width: 790px) {
+
+  #Story {
+
+    flex-direction: column;
+
+    align-items: center;
+
+  }
+
+  #StoryStatHeader {
+
+    min-height: 20vh;
+
+    border: none;
+
+    font-size: 1.75rem;
+
+    text-align: center;
+
+  }
+
+  #StoryStatView,
+
+  #StoryTimeline {
+
+    width: 95%;
+
+  }
+
+  #StoryStatList {
+
+    display: none;
+
+  }
+
+  #StoryModalContent {
+
+    width: 70%;
+
+  }
+
+}
+
+
+
+@media only screen and (max-width: 500px) {
+
+  #StoryStatHeader {
+
+    flex-direction: column;
+
+    justify-content: center;
+
+    align-items: center;
+
+  }
+
+  #StoryStatHeader > p {
+
+    font-size: 1.75em;
+
+  }
+
+}
+
+
+
+@media only screen and (max-width: 415px) {
+
+  #StoryModalContent {
+
+    width: 80%;
+
+  }
+
+  .StoriesButtonWrapper > button,
+
+  #StorySubmitBtn {
+
+    min-width: 20vw;
+
+  }
+
+  #StoryModalBtnWrapper {
+
+    justify-content: space-between;
+
+    padding: 0 5px 0;
+
+    box-sizing: border-box;
+
+  }
+
+  #StoryModalBtnWrapper > button,
+
+  #StoryModalBtnWrapper > .inputLabel {
+
+    min-width: 50%;
+
+  }
+
+  #StoryMediaLabel {
+
+    min-width: 45vw;
+
+  }
+
+}
+
+
+
+@media only screen and (max-width: 370px) {
+
+  #StoryStatHeader > p {
+
+    font-size: 1.5em;
+
+  }
+
+}
+
+
+
+@media only screen and (max-height: 500px) {
+
+  #StoryStatHeader > img {
+
+    max-width: 20%;
+
+  }
+
+  .StoriesHeader {
+
+    height: 14vh;
+
+  }
+
+  .StoriesButtonWrapper > button {
+
+    height: 6.5vh;
+
+  }
+
+  #StorySubmitMediaDiv {
+
+    height: 15vh;
+
+  }
+
+  #StorySubmissionButtons {
+
+    height: 13vh;
+
+  }
+
+  #StoryModalContent {
+
+    height: 80%;
+
+  }
+
+}
+
+
+
+@media only screen and (min-height: 1000px) {
+
+  .StoriesHeader {
+
+    font-size: 1.75em;
+
+  }
+
+  .StoriesButtonWrapper > button {
+
+    height: 3vh;
+
+  }
+
+  #StorySubmissionButtons {
+
+    height: 5vh;
+
+  }
+
+  #StorySubmitText,
+
+  #StorySubmitText:focus {
+
+    height: 15vh;
+
+  }
+
+}
+
+
+
+@media only screen and (min-height: 1200px) {
+
+  #StoryModalContent {
+
+    width: 70%;
+
+  }
+
+  #StoryModalHeader {
+
+    font-size: 2.5em;
+
+  }
+
+  #StoryModalBtnWrapper {
+
+    font-size: 1.5rem;
+
+  }
+
+}

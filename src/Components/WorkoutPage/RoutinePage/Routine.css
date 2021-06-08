@@ -1,0 +1,198 @@
+#RoutineView{
+  min-height: 100vh;
+  width: 100%;
+  font-family: 'Nunito', sans-serif;
+}
+
+#RoutineHeader{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-items: baseline;
+  height: 10vh;
+  width: 100vw;
+  background-color: lightblue;
+  font-size: 1rem;
+}
+
+#RoutineHeaderWrapper{
+  width: 90%;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#RoutineName, #RoutineName:focus{
+  position: relative;
+  left: 425px;
+  resize: none;
+  border: none;
+  outline: none;
+  width: 50%;
+  height: 70%;
+  overflow-x: auto;
+  overflow-y: hidden;
+  white-space: nowrap;
+  font-family: 'Nunito', sans-serif;
+  font-weight: 800;
+  font-style: italic;
+  color: black;
+  font-size: 2.85em;
+  background-color: lightblue;
+  text-align: center;
+}
+
+#RoutineFinish{
+  font-family: Helvetica;
+  height: 70%;
+  font-family: 'Nunito', sans-serif;
+  font-weight: 200;
+  font-size: 2.85em;
+  text-decoration: none;
+  color: red;
+  cursor:pointer;
+}
+
+#RoutineFooter{
+  width: 100%;
+  height: 6vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-top: 1px solid #1F0CAD;
+  box-sizing: border-box;
+  background-color: white;
+  font-size: 1rem;
+}
+
+.FooterBtns{
+  height: 100%;
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 700;
+  color: red;
+  font-size: 2em;
+  text-decoration: none;
+  text-align: center;
+  overflow: hidden;
+  background-color: lightblue;
+}
+
+
+
+.FooterBtns:active{
+  color: red;
+}
+
+#EDescriptions{
+  position: relative;
+  top: 300px;
+}
+
+#RoutineList{
+  height:84vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow: auto;
+  font-size: 1rem;
+}
+
+.RoutineLi{
+  width: 90vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #1F0CAD;
+  margin-top: 5vh;
+}
+
+.RoutineLiInfo{
+  font-size: 2em;
+  font-weight: 200;
+}
+
+.RoutineLiDelBtn{
+  color: #6F0CAD;
+  cursor: pointer;
+}
+
+.EmptyRoutineMsg{
+  position: absolute;
+  top: 50%;
+  left: 52.5vw;
+  transform: translate(-50%, -50%);
+  white-space: wrap;
+  font-size: 2em;
+  z-index: -1;
+}
+
+
+ 
+@media only screen and (max-width: 890px){
+  .EmptyRoutineMsg{
+    font-size: 1.75em;
+  }
+  .RoutineLi{
+    width: 95vw;
+  }
+}
+
+@media only screen and (max-width: 530px){
+  .EmptyRoutineMsg{
+    font-size: 1.5em;
+  }
+}
+
+@media only screen and (max-width: 452px){
+  .EmptyRoutineMsg{
+    font-size: 1.25em;
+  }
+  .RoutineLiInfo{
+    font-size: 1.75em;
+  }
+}
+
+@media only screen and (max-width: 375px){
+  #RoutineHeader{
+    font-size: 0.9rem;
+  }
+  #RoutineHeaderWrapper{
+    width: 95%;
+  }
+  .RoutineLiInfo{
+    font-size: 1.5em;
+  }
+}
+
+@media only screen and (max-height: 600px){
+  #RoutineHeader{
+    height: 12vh;
+  }
+  #RoutineList{
+    height: 82vh;
+  }
+}
+
+@media only screen and (max-height: 500px){
+  .EmptyRoutineMsg{
+    top: 75vh;
+    font-size: 1.3em;
+  }
+  #RoutineHeader{
+    height: 22.5vh;
+  }
+  #RoutineFooter{
+    height: 12.5vh;
+  }
+}
+
+@media only screen and (min-height: 1000px){
+  #RoutineHeader{
+    font-size: 1.5rem;
+  }
+}

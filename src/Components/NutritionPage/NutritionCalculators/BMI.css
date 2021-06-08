@@ -1,0 +1,84 @@
+body {
+    background-color: lightblue;
+  
+    position: relative;
+  }
+  
+  .text-2 {
+    margin: auto;
+  
+    width: 50%;
+  
+    padding: 10px;
+  
+    font-size: 2em;
+  }
+  
+  .text {
+    margin: auto;
+  
+    width: 50%;
+  
+    padding: 10px;
+  
+    font-size: 1.5em;
+  }
+  
+  .input-div {
+    margin: auto;
+  
+    width: 50%;
+  
+    padding: 10;
+  
+    font-size: 1em;
+  }
+  
+  .display-div {
+    margin: auto;
+  
+    left: 195px;
+  
+    top: 90px;
+  
+    height: 369.5px;
+  
+    width: 654px;
+  }
+  
+  .calc {
+    margin: auto;
+  
+    width: 100%;
+  
+    padding: 10px;
+  
+    font-size: 2em;
+  
+    color: red;
+  }
+  
+  legend {
+    margin: auto;
+  
+    width: 100%;
+  
+    padding: 10px;
+  
+    font-size: 1.2em;
+  }
+  
+  .bmi-calculation {
+    text-align: center;
+  
+    font-weight: bold;
+  
+    font-size: 1.8em;
+  }
+  
+  .btn-default {
+    position: relative;
+  
+    left: 1000px;
+  }
+  

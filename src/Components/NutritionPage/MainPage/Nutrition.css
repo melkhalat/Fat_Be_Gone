@@ -1,0 +1,376 @@
+#NutritionContainer{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+  width: 100%;
+  font-family: 'Nunito', sans-serif;
+}
+
+#NutritionView{
+  min-height: 0vh;
+  width: 95vw;
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  margin-top: 2vh;
+  font-size: 1rem;
+  overflow: hidden;
+  font-family: Helvetica;
+  color: red;
+}
+
+#NutritionView > p{
+  font-size: 4.5em;
+}
+
+#NutritionViewMacroWrapper{
+  width: 100%;
+  min-height: 0vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#NutritionViewMacroWrapper > p{
+  min-width: calc(80% / 3);
+  font-size: 3em;
+} */
+
+#NutritionViewMacroWrapper > p > span{
+  white-space: nowrap;
+}
+
+#NVButtonsWrapper{
+  position: relative;
+  left: 450px; top: -50px;
+  width: 95vw;
+  height: 12vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 7px;
+  text-decoration: underline;  
+  
+}
+
+ .NVInnerWrapper{
+   position: relative;
+   left: 20px; top: -35px;
+  width: 100%;
+  height: 50%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1rem;
+}
+
+.NVButtonsBMI{
+  position: relative;
+  top: 30px;
+
+  background-color: lightblue;
+  color: red;
+  font-size: 1.25em;
+  font-family: Helvetica;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.NVInnerWrapper2{
+  position: relative;
+  left: 400px; top: -50px;
+ width: 100%;
+ height: 50%;
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
+ font-size: 1rem;
+}
+
+.NVButtons{
+  min-height: 5vh;
+  width: 47vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  top: 100px; left: -400px;
+  
+  background-color: lightblue;
+  color: red;
+  font-size: 1.25em;
+  font-family: Helvetica;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+
+
+.NutritionMealDividers{
+  width: 95vw;
+  
+  box-sizing: border-box;
+  margin-bottom: 20px;
+  
+  font-size: 1rem;
+}
+
+.MealItemCollapsible{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.MealNameWrapper{
+  position: relative;
+  left: 400px;
+  width: 50%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: red;
+  text-align: center;
+}
+
+.MealName{
+  position: relative;
+  left: 400px;
+  font-family: Helvetica;
+}
+
+.MealNameWrapper > p {
+  font-size: 2.25em;
+  font-weight: 200;
+  color: white;
+  text-align: center;
+}
+
+.NutritionDownArrowImg{
+  height: 50px;
+  width: 50px;
+  box-sizing: border-box;
+  cursor: pointer;
+}
+
+.MealItemsWrapper{
+  height: auto;
+  width: 100%;
+  padding: 5px;
+  box-sizing: border-box;
+  font-size: 1rem;
+}
+
+.NutritionMealItems{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #707070;
+  margin-bottom: 1vh;
+  cursor:pointer;
+}
+
+.NutritionMealItems > div{
+  display: flex;
+  align-items: center;
+  font-size: 1.25em;
+}
+
+.NutritionMealItems > p{
+  font-size: 1.25em;
+}
+
+.NutritionDeleteBtn{
+ height: 40px;
+ width: 40px;
+ margin-left: 15px;
+ margin-top: 5px;
+}
+
+.AddFoodWrapper{
+  position: relative;
+  left: -50px;
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  font-family: Helvetica;
+  
+}
+
+
+#addFood{
+  color: red;
+  text-decoration: none;
+}
+
+
+
+.NutritionMealModal{
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.5);
+  overflow: auto;
+}
+
+.NutritionModalContent{
+  height: 50vh;
+  width: 50vw;
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  border: 1px solid #1F0CAD;
+  box-sizing: border-box;
+  opacity: 1;
+}
+
+.NutritionModalHeader{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 5px;
+  box-sizing: border-box;
+  background-color: #1F0CAD;
+  color: white;
+  font-weight: 500;
+  flex: 0.5;
+}
+
+.NutritionModalHeader > p{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex: 1;
+}
+
+.ModalServingDiv{
+  display: flex;
+  justify-content: flex-start;
+  align-items: baseline;
+  width: 100%;
+  height: 30%;
+}
+
+.NutritionModalTextArea{
+  resize: none;
+  border: none;
+  outline: none;
+  min-width: 15%;
+  max-width: 15%;
+  width: 15%;
+  height: 100%;
+  margin-left: 10px;
+  font-size: 1em;
+  padding: 2px;
+  box-sizing: border-box;
+  background-color: #1F0CAD;
+  color: white;
+  text-decoration: underline;
+}
+
+.NutritionModalBody{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow: auto;
+  flex: 2;
+}
+
+.NutritionModalItems{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin: 5px 0 5px;
+  padding: 3px;
+  border-bottom: 1px solid #1F0CAD;
+  box-sizing: border-box;
+}
+
+.NutritionModalItems > p:last-child{
+  white-space: nowrap;
+  margin-left: 3px;
+}
+
+
+@media only screen and (max-width: 796px){
+  #NutritionView{
+    font-size: 0.7rem;
+  }
+  .MealItemsWrapper{
+    font-size: 0.85rem;
+  }
+  .NutritionModalContent{
+    height: 60vh;
+    width: 80vw;
+  }
+}
+
+@media only screen and (max-width: 554px){
+  #NutritionView{
+    font-size: 0.5rem;
+  }
+  .MealItemsWrapper{
+    font-size: 0.8rem;
+  }
+  .NVInnerWrapper{
+    font-size: 0.85rem;
+  }
+}
+
+@media only screen and (max-width: 440px){
+  #NutritionView > p{
+    font-size: 3.5em;
+  }
+  
+  .NVInnerWrapper{
+    font-size: 0.75rem;
+  }
+}
+
+@media only screen and (max-width: 360px){
+  .NVInnerWrapper{
+    font-size: 0.65rem;
+  }
+}
+
+@media only screen and (max-height: 500px){
+  .NutritionModalContent{
+    height: 70vh;
+    width: 80vw;
+  }
+  #NVButtonsWrapper{
+    height: 20vh;
+  }
+  .NVInnerWrapper{
+    font-size: 1.1rem;
+  }
+}
+
+@media only screen and (max-height: 320px){
+  .NVInnerWrapper{
+    font-size: 1rem;
+  }
+}
+
+@media only screen and (min-height: 1000px){
+  .NVInnerWrapper{
+    font-size: 1.25rem;
+  }
+}
